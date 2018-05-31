@@ -9,22 +9,24 @@
   </head>
   <body>
     <div class="container">
-      <h1>Fill in the blanks to write your story!</h1>
+      <h1>Fill out our Favorite Survey!</h1>
       <div>
       <form id="formOne">
         <div class="form-group">
-          <label for="person1">A name</label>
-          <input id="person1" class="form-control" type="text">
+          <h2>Your Name</h2>
+          <input id="name" class="form-control" type="text">
         </div>
       </div>
 
+    <h2>Favorite Alcholic Beverage</h2>
     <select class="form-control" id="beverage">
-      <option>Coffee</option>
-      <option>Tea</option>
-      <option>Kombucha</option>
-      <option>Water</option>
+      <option>Wine</option>
+      <option>Beer</option>
+      <option>Vodka</option>
+      <option>Whiskey</option>
     </select>
 
+    <h2>Favorite Ice Cream Flavor</h2>
     <div class="radio">
       <label>
         <input type="radio" name="flavor" value="chocolate" checked>
@@ -43,12 +45,23 @@
         Cookies & Cream
       </label>
     </div>
-
+    <h2>Favorite Birthday</h2>
     <div class="form-group">
       <label for="born">Date of birth:</label>
       <input id="born" class="form-control" type="date">
     </div>
-    <button type="submit" class="btn">Show me the story!</button>
+
+    <h2>Favorite Color</h2>
+    <div class="form-group">
+      <label for="color">What is your favorite color?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
+    <button type="submit" class="btn btn-success">Favorite Submit</button>
 </form>
+
+  <div id="results">
+    <p>Hello <span class="name"></span>! Your favorite alcoholic beverage is
+      <span class="drink"></span>. <span class="icecream"></span> is your favorite flavor of ice cream. Your favorite birthday is <span class="birthday"></span>. Finally, your favoirite color is <span class="color"></span>. Thank you for taking our survey!</p>
+    </div>
   </div>
 </html>
